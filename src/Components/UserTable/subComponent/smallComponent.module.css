@@ -1,0 +1,45 @@
+.smallComponent {
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 150px;
+  position: absolute;
+  height: 120px;
+  padding: 13px;
+  gap: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 10%;
+  right: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.smallComponent a {
+  font-weight: 500;
+  font-size: 15px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-decoration: none;
+  text-transform: capitalize;
+  line-height: 16px;
+  color: #545f7d;
+}
+
+.smallComponent a:hover {
+  text-decoration: underline;
+}
+/*# sourceMappingURL=smallComponent.module.css.map */

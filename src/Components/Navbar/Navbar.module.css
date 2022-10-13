@@ -1,0 +1,123 @@
+.navbarContainer {
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #ffffff;
+  -webkit-box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+}
+
+.navbarContainer .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 24px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.navbarContainer .left .logo span {
+  color: #213f7d;
+  font-size: 24px;
+}
+
+.navbarContainer .left .search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #FFFFFF;
+  border-radius: 8px;
+  border: 2px solid #213F7D;
+  opacity: 0.5;
+}
+
+.navbarContainer .left .search .navbarInput {
+  border: none;
+  width: 300px;
+  height: auto;
+}
+
+.navbarContainer .left .search .navbarSearchButton {
+  border: none;
+  background: #39CDCC;
+  padding: 6px 15px;
+  font-size: 20px;
+  opacity: 10;
+  border-radius: inherit;
+}
+
+.navbarContainer .left .search .navbarSearchButton svg {
+  color: #fff;
+  font-size: 22px;
+}
+
+.navbarContainer .right {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 40px;
+}
+
+.navbarContainer .right a {
+  margin-right: 15px;
+  font-size: 20px;
+  color: #213F7D;
+}
+
+.navbarContainer .right .notification {
+  cursor: pointer;
+  margin: 15px;
+}
+
+.navbarContainer .right .notification svg {
+  color: #213F7D;
+  font-size: 25px;
+}
+
+.navbarContainer .right .navbarImage {
+  cursor: pointer;
+  margin: 15px;
+}
+
+.navbarContainer .right .navbarImage img {
+  width: 60px;
+  height: 48px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.navbarContainer .right .navbarUserName {
+  cursor: pointer;
+}
+
+.navbarContainer .right .navbarUserName a {
+  color: #213F7D;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.navbarContainer .right .navbarUserName svg {
+  color: #213F7D;
+}
+/*# sourceMappingURL=Navbar.module.css.map */

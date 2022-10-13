@@ -1,0 +1,233 @@
+.userDetailContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userDetailContainer .goback {
+  font-weight: 400;
+  font-size: 26px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 10px 20px;
+  line-height: 19px;
+  color: #545f7d;
+}
+
+.userDetailContainer .top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 30px;
+}
+
+.userDetailContainer .top .title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213f7d;
+}
+
+.userDetailContainer .top .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.userDetailContainer .top .buttons .blacklist {
+  border: 1px solid #e4033b;
+  text-transform: uppercase;
+  border-radius: 10px;
+  background: inherit;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  text-align: center;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  cursor: pointer;
+  color: #e4033b;
+  padding: 9px 15px;
+}
+
+.userDetailContainer .top .buttons .blacklist:hover {
+  background-color: #e4033b;
+  color: #ffffff;
+}
+
+.userDetailContainer .top .buttons .activate {
+  border: 1px solid #39cdcc;
+  text-transform: uppercase;
+  border-radius: 10px;
+  cursor: pointer;
+  background: inherit;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #39cdcc;
+  padding: 9px 15px;
+}
+
+.userDetailContainer .top .buttons .activate:hover {
+  background-color: #39cdcc;
+  color: #ffffff;
+}
+
+.userDetailContainer .userOverview {
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  height: auto;
+  width: 1024px;
+}
+
+.userDetailContainer .userOverview .one {
+  height: 120px;
+  padding: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.userDetailContainer .userOverview .one .first {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 15px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  gap: 30px;
+  border-right: 1px solid lightgray;
+}
+
+.userDetailContainer .userOverview .one .first img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.userDetailContainer .userOverview .one .first .det {
+  text-align: left;
+}
+
+.userDetailContainer .userOverview .one .first .det span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #213f7d;
+}
+
+.userDetailContainer .userOverview .one .first .det p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  color: #545f7d;
+}
+
+.userDetailContainer .userOverview .one .second {
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  border-right: 1px solid lightgray;
+}
+
+.userDetailContainer .userOverview .one .second span {
+  font-weight: 500;
+  font-size: 18px;
+  text-transform: capitalize;
+  line-height: 16px;
+  color: #545f7d;
+}
+
+.userDetailContainer .userOverview .one .third {
+  padding: 16px;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.userDetailContainer .userOverview .one .third span {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  color: #213f7d;
+}
+
+.userDetailContainer .userOverview .one .third p {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #213f7d;
+}
+
+.userDetailContainer .userOverview .footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.userDetailContainer .userOverview .footer a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 19px;
+  color: black;
+  padding-bottom: 11px;
+}
+
+.userDetailContainer .userOverview .footer a:hover {
+  color: #39cdcc;
+  border-bottom: 2px solid #39CDCC;
+}
+/*# sourceMappingURL=Userdetails.module.css.map */

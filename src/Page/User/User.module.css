@@ -1,0 +1,46 @@
+.userContainer {
+  padding: 14px;
+  height: calc(100vh - 70px);
+  width: 80vw;
+}
+
+.userContainer .title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213f7d;
+}
+
+.userContainer .contain {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.userContainer .contain .cardComponent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.userContainer .contain .userListTable {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  width: auto;
+}
+/*# sourceMappingURL=User.module.css.map */

@@ -1,0 +1,58 @@
+.sidebarContainer {
+  flex: 0.8;
+  position: sticky;
+  display: flex;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #ffffff;
+  box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  flex-direction: column;
+  .topItem {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 10px;
+    margin: 10px 0;
+    margin-left: 18px;
+    color: #213f7d;
+    cursor: pointer;
+    svg {
+      margin-right: 5px;
+    }
+  }
+  .Section {
+    display: flex;
+    flex-direction: column;
+    .title {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 14px;
+      margin-left: 22px;
+      color: rgba(84, 95, 125, 1);
+    }
+    .customerItem {
+      padding: 10px 0;
+      // border-left: 4px solid rgba(57, 205, 204, 1);
+      &:hover {
+        background: rgb(214, 230, 230);
+      }
+      a {
+        text-decoration: none;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 19px;
+        color: #213f7d;
+        a:active {
+          border-left: 4px solid rgba(57, 205, 204, 1);
+        }
+        span {
+          margin-left: 20px;
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

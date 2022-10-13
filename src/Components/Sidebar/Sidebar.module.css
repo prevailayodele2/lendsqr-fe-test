@@ -1,0 +1,81 @@
+.sidebarContainer {
+  -webkit-box-flex: 0.8;
+      -ms-flex: 0.8;
+          flex: 0.8;
+  position: -webkit-sticky;
+  position: sticky;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: calc(100vh - 70px);
+  overflow: hidden;
+  overflow-y: scroll;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.04);
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebarContainer .topItem {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 10px;
+  margin: 10px 0;
+  margin-left: 18px;
+  color: #213f7d;
+  cursor: pointer;
+}
+
+.sidebarContainer .topItem svg {
+  margin-right: 5px;
+}
+
+.sidebarContainer .Section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.sidebarContainer .Section .title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 14px;
+  margin-left: 22px;
+  color: #545f7d;
+}
+
+.sidebarContainer .Section .customerItem {
+  padding: 10px 0;
+}
+
+.sidebarContainer .Section .customerItem:hover {
+  background: #d6e6e6;
+}
+
+.sidebarContainer .Section .customerItem a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 19px;
+  color: #213f7d;
+}
+
+.sidebarContainer .Section .customerItem a a:active {
+  border-left: 4px solid #39cdcc;
+}
+
+.sidebarContainer .Section .customerItem a span {
+  margin-left: 20px;
+  margin-right: 15px;
+}
+/*# sourceMappingURL=Sidebar.module.css.map */

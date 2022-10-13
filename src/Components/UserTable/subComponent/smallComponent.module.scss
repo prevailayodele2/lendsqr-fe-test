@@ -1,0 +1,30 @@
+.smallComponent {
+  background: #ffffff;
+  border: 1px solid rgba(84, 95, 125, 0.04);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  width: 150px;
+  position: absolute;
+  height: 120px;
+  padding: 13px;
+  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 10%;
+  right: 20px;
+  align-items: center;
+  a {
+    font-weight: 500;
+    font-size: 15px;
+    text-align: center;
+    display: flex;
+    text-decoration: none;
+    text-transform: capitalize;
+    line-height: 16px;
+    color: #545f7d;
+    &:hover{
+        text-decoration: underline;
+    }
+  }
+}

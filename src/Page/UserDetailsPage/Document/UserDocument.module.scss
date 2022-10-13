@@ -1,0 +1,10 @@
+.UserDocumentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div{
+    background: #ffffff;
+    border-radius: 4px;
+  }
+}

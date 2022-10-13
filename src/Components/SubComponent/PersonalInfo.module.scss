@@ -1,0 +1,51 @@
+.InfoContainer {
+  width: 1037px;
+  .personal {
+    display: flex;
+    flex-direction: column;
+    padding: 26px;
+    text-transform: capitalize;
+    .title {
+      font-weight: 500;
+      font-size: 19px;
+      line-height: 19px;
+      color: #213f7d;
+    }
+    .document {
+      display: flex;
+      margin-top: 24px;
+      width: auto;
+      gap: 30px;
+      border-bottom: 1px solid lightgray;
+      flex-wrap: wrap;
+      .name,
+      .phone,
+      .email,
+      .bvn,
+      .gender,
+      .status,
+      .children,
+      .recidence {
+        display: flex;
+        text-align: left;
+        padding: 0px 15px;
+        justify-content: space-around;
+        flex-direction: column;
+        span {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 14px;
+          text-transform: uppercase;
+          color: #545f7d;
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          text-transform: capitalize;
+          line-height: 19px;
+          color: #545f7d;
+        }
+      }
+    }
+  }
+}

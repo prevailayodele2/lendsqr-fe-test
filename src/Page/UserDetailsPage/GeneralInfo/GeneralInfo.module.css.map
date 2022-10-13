@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,qBAAqB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACxB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;CASpB;;AAbD,AAKE,qBALmB,CAKnB,UAAU,CAAC;EACT,UAAU,EAAE,OAAO;EACnB,MAAM,EAAE,MAAM;EACd,KAAK,EAAE,MAAM;EACb,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,uBAAuB;EACzC,UAAU,EAAE,GAAG,CAAC,GAAG,CAAC,IAAI,CAAC,mBAAmB;EAC5C,aAAa,EAAE,GAAG;CACnB",
+    "sources": [
+        "GeneralInfo.module.scss"
+    ],
+    "names": [],
+    "file": "GeneralInfo.module.css"
+}

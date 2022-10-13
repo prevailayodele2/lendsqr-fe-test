@@ -1,0 +1,46 @@
+.cardContainer {
+  width: 200px;
+  height: 140px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cardContainer .cardIcon svg {
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 50%;
+  background: #f091ff;
+  opacity: 0.9;
+  color: purple;
+}
+
+.cardContainer .cardTitle {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #545F7D;
+}
+
+.cardContainer .cardDetails {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #213F7D;
+}
+/*# sourceMappingURL=Userpagecard.module.css.map */

@@ -1,0 +1,88 @@
+$--parentcolor: #213F7D;
+$--cursor: pointer;
+.navbarContainer {
+  width: 100%;
+  position: sticky;
+  height: 70px;
+  display: flex;
+  background: #ffffff;
+  box-shadow: 3px 0px 20px rgba(0, 0, 0, 0.04);
+  .left {
+    display: flex;
+    padding: 0 24px;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+    .logo {
+      span {
+        color: #213f7d;
+        font-size: 24px;
+      }
+    }
+    .search{
+        display: flex;
+        background: #FFFFFF;
+        border-radius: 8px;
+        border: 2px solid #213F7D;
+        opacity: 0.5;
+        .navbarInput{
+          border: none;
+          width: 300px;
+          height: auto;
+        }
+        .navbarSearchButton{
+            border: none;
+            background: #39CDCC;
+            padding: 6px 15px;
+            font-size: 20px;
+            opacity: 10;
+            border-radius: inherit;
+            svg{
+                color: #fff;
+                font-size: 22px;
+            }
+        }
+    }
+  }
+  .right{
+    flex: 1;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+    margin-right: 40px;
+    a{
+        margin-right: 15px;
+        font-size: 20px;
+        color: $--parentcolor;
+    }
+    .notification{
+        cursor: $--cursor;
+        margin: 15px;
+        svg{
+            color: $--parentcolor;
+            font-size: 25px;
+        }
+    }
+    .navbarImage{
+        cursor: $--cursor;
+        margin: 15px;
+      img{
+        width: 60px;
+        height: 48px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .navbarUserName{
+        cursor: $--cursor;
+      a{
+        color: $--parentcolor;
+        font-size: 20px;
+        text-decoration: none;
+      }
+      svg{
+        color: $--parentcolor;
+      }
+    }
+  }
+}

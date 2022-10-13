@@ -1,0 +1,54 @@
+.tableContainer {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+          box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.tableContainer .usetTableContainer {
+  padding: 19px;
+}
+
+.tableContainer .usetTableContainer svg {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.tableContainer .usetTableContainer .tableTr .tableTh {
+  font-weight: 600;
+  padding: 15px 4px;
+  text-align: left;
+  margin-right: 4px;
+  font-size: 17px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #545f7d;
+}
+
+.tableContainer .usetTableContainer .organisation,
+.tableContainer .usetTableContainer .username,
+.tableContainer .usetTableContainer .email,
+.tableContainer .usetTableContainer .phone,
+.tableContainer .usetTableContainer .date,
+.tableContainer .usetTableContainer .status {
+  padding: 14px 7px;
+  border-bottom: 1px solid #eeeded;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  text-align: left;
+  font-weight: 400;
+  font-size: 13.6px;
+  margin-left: 9px;
+  line-height: 16px;
+  color: #545f7d;
+}
+/*# sourceMappingURL=Usertable.module.css.map */

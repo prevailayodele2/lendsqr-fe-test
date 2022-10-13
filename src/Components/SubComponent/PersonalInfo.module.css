@@ -1,0 +1,86 @@
+.InfoContainer {
+  width: 1037px;
+}
+
+.InfoContainer .personal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 26px;
+  text-transform: capitalize;
+}
+
+.InfoContainer .personal .title {
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 19px;
+  color: #213f7d;
+}
+
+.InfoContainer .personal .document {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 24px;
+  width: auto;
+  gap: 30px;
+  border-bottom: 1px solid lightgray;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.InfoContainer .personal .document .name,
+.InfoContainer .personal .document .phone,
+.InfoContainer .personal .document .email,
+.InfoContainer .personal .document .bvn,
+.InfoContainer .personal .document .gender,
+.InfoContainer .personal .document .status,
+.InfoContainer .personal .document .children,
+.InfoContainer .personal .document .recidence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+  padding: 0px 15px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.InfoContainer .personal .document .name span,
+.InfoContainer .personal .document .phone span,
+.InfoContainer .personal .document .email span,
+.InfoContainer .personal .document .bvn span,
+.InfoContainer .personal .document .gender span,
+.InfoContainer .personal .document .status span,
+.InfoContainer .personal .document .children span,
+.InfoContainer .personal .document .recidence span {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #545f7d;
+}
+
+.InfoContainer .personal .document .name p,
+.InfoContainer .personal .document .phone p,
+.InfoContainer .personal .document .email p,
+.InfoContainer .personal .document .bvn p,
+.InfoContainer .personal .document .gender p,
+.InfoContainer .personal .document .status p,
+.InfoContainer .personal .document .children p,
+.InfoContainer .personal .document .recidence p {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+  line-height: 19px;
+  color: #545f7d;
+}
+/*# sourceMappingURL=PersonalInfo.module.css.map */

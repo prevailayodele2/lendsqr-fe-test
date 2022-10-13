@@ -1,0 +1,37 @@
+.cardContainer {
+  width: 200px;
+  height: 140px;
+  background: #ffffff;
+  border: 1px solid rgba(33, 63, 125, 0.06);
+  box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
+  border-radius: 4px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  .cardIcon{
+      svg{
+          font-size: 25px;
+          padding: 10px;
+          border-radius: 50%;
+          background: #f091ff;
+          opacity: 0.9;
+          color: purple;
+      }
+  }
+  .cardTitle{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    color: #545F7D;
+  }
+  .cardDetails{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    text-transform: uppercase;
+    color: #213F7D;
+  }
+}
