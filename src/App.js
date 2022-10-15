@@ -6,23 +6,32 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import User from './Page/User/User';
 import GeneralInfo from './Page/UserDetailsPage/GeneralInfo/GeneralInfo';
 import UserDocument from './Page/UserDetailsPage/Document/UserDocument';
+import Login from './Page/Login/Login';
 
 function App() {
+  const userLogin = false;
   return (
     <>
-      <Router>
-        <Navbar />
-        <div className="container">
-          <Sidebar />
-           <div className='sub'>
-            <Routes>
-              <Route exact path="/user" element={<User/>} />
-              <Route path="/user/:id/personal_info" element={<GeneralInfo />} />
-              <Route path="/user/:id/document" element={<UserDocument />} />
-            </Routes>
+      {userLogin ? (
+        <Router>
+          <Navbar />
+          <div className="container">
+            <Sidebar />
+            <div className="sub">
+              <Routes>
+                <Route exact path="/user" element={<User />} />
+                <Route
+                  path="/user/:id/personal-Info"
+                  element={<GeneralInfo />}
+                />
+                <Route path="/user/:id/document" element={<UserDocument />} />
+              </Routes>
             </div>
-        </div>
-      </Router>
+          </div>
+        </Router>
+      ) : (
+        <Login />
+      )}
     </>
   );
 }

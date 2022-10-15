@@ -1,5 +1,5 @@
 .sidebarContainer {
-  flex: 0.8;
+  flex: 0.9;
   position: sticky;
   display: flex;
   height: calc(100vh - 70px);
@@ -13,7 +13,7 @@
     font-weight: 400;
     font-size: 16px;
     line-height: 10px;
-    margin: 10px 0;
+    margin: 10px 4px;
     margin-left: 18px;
     color: #213f7d;
     cursor: pointer;

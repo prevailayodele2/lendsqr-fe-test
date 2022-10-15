@@ -226,6 +226,12 @@
   padding-bottom: 11px;
 }
 
+.userDetailContainer .userOverview .footer .activeClassName {
+  color: #39cdcc;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #39CDCC;
+}
+
 .userDetailContainer .userOverview .footer a:hover {
   color: #39cdcc;
   border-bottom: 2px solid #39CDCC;

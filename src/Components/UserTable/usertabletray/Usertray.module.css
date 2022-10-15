@@ -1,0 +1,49 @@
+.usertabletrayContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  border: 1px solid black;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.usertabletrayContainer svg {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.usertabletrayContainer .tableTr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid red;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 100%;
+}
+
+.usertabletrayContainer .tableTr .organisation,
+.usertabletrayContainer .tableTr .email,
+.usertabletrayContainer .tableTr .username,
+.usertabletrayContainer .tableTr .phone,
+.usertabletrayContainer .tableTr .date,
+.usertabletrayContainer .tableTr .status
+.statuss {
+  padding: 14px 0px;
+  width: auto;
+  font-weight: 400;
+  border: 1px solid green;
+  font-size: 13.6px;
+  line-height: 16px;
+  color: #545f7d;
+}
+
+.usertabletrayContainer .tableTr .organisation {
+  width: 150px;
+}
+/*# sourceMappingURL=Usertray.module.css.map */

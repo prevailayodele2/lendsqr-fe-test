@@ -1,27 +1,29 @@
 .userContainer {
   padding: 14px;
-  height: calc(100vh - 70px);
-  width: 80vw;
+  height: calc(140vh - 70px);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   .title {
     font-weight: 500;
+    padding: 16px 7px ;
     font-size: 24px;
     line-height: 28px;
     color: #213f7d;
   }.contain{
     width: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
   .cardComponent{
+    justify-content: space-around;
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    padding: 0px 20px;
     // display: grid;
     //grid-template-columns: repeat(auto-fit, minmax(min(100%, 150px), 1fr));
   }.userListTable{
     margin-top: 20px;
     margin-bottom: 30px;
+    padding: 20px;
     position: relative;
     width: auto;
   }

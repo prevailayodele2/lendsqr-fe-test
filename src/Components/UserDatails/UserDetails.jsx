@@ -1,13 +1,12 @@
-import React from 'react';
-import PersonalInfos from '../../Components/SubComponent/PersonalInfos';
+import React, { useState } from 'react';
 import classes from './Userdetails.module.css';
-import { Link, NavLink } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
-const UserDetails = () => {
-  let activeClassName = {
-    color: '#39cdcc',
-    borderBottom: '2px solid #39CDCC'
-  }
+const UserDetails = ({ user }) => {
+  const { pathname } = useLocation();
+  const activePersonalInfo = pathname.split('/')[3] == 'personal-Info';
+  const activedocument = pathname.split('/')[3] == 'document';
+
   return (
     <>
       <div className={classes.userDetailContainer}>
@@ -23,30 +22,39 @@ const UserDetails = () => {
           <div className={classes.userOverview}>
             <div className={classes.one}>
               <div className={classes.first}>
-                <img src="/images/user.png" alt="" />
+                <img src={user.profile.avatar} alt="" />
                 <div className={classes.det}>
-                  <span>Prevail Ayodele</span>
-                  <p>nooncnonoe</p>
+                  <span>
+                    {user.profile.firstName + ' ' + user.profile.lastName}
+                  </span>
+                  <p>{user.accountNumber}</p>
                 </div>
               </div>
               <div className={classes.second}>
                 <span>user tier</span>
               </div>
               <div className={classes.third}>
-                <span>$200,000.00</span>
-                <p>010101010001/previous Bank</p>
+                <span>{user.profile.currency + user.accountBalance}</span>
+                <p>{user.phoneNumber + '/' + user.orgName}</p>
               </div>
             </div>
             <div className={classes.footer}>
-               <NavLink exact to='/user/09/personal_info'>{({isActive})=> (<span className={isActive ? activeClassName : undefined}>General Infomation</span>)}</NavLink>
-               <NavLink exact to='/user/00/document'>{({isActive})=> (<span className={isActive ? activeClassName : undefined}>Document</span>)}</NavLink>
-               <Link to='/bank'>bank details</Link>
-               <Link to='/loans'>loans</Link>
-               <Link to='savings'>savings</Link>
-               <Link to='/system'>app system</Link>
+              <Link to={`/user/${user.id}/personal-Info`}>
+                <span className={activePersonalInfo ?  classes.activeClassName  : ' '}>
+                  General Infomation
+                </span>
+              </Link>
+              <Link to="/user/00/document">
+                <span className={activedocument ? classes.activeClassName  : ' '}>
+                  Document
+                </span>
+              </Link>
+              <Link to="/bank">bank details</Link>
+              <Link to="/loans">loans</Link>
+              <Link to="savings">savings</Link>
+              <Link to="/system">app system</Link>
             </div>
           </div>
-         
         </div>
       </div>
     </>

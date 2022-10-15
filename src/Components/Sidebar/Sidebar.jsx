@@ -16,7 +16,7 @@ const Sidebar = () => {
         <span className={classes.title}>Customers</span>
         {SidebarItem.Customer.map((item)=> (
           <div key={item.id}  className={classes.customerItem}>
-          <Link to={item.link} activeClasName='act'> <span>{item.svg}</span>{item.name}</Link>
+          <NavLink to={item.link} activeClasName='active'> <span>{item.svg}</span>{item.name}</NavLink>
           </div>
         ))}
        </div>

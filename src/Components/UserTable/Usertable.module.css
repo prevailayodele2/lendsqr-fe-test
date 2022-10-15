@@ -1,10 +1,10 @@
 .tableContainer {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background: #ffffff;
   border: 1px solid rgba(33, 63, 125, 0.06);
   -webkit-box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
@@ -14,7 +14,14 @@
 }
 
 .tableContainer .usetTableContainer {
-  padding: 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
 }
 
 .tableContainer .usetTableContainer svg {
@@ -22,33 +29,37 @@
   cursor: pointer;
 }
 
+.tableContainer .usetTableContainer .tableTr {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
 .tableContainer .usetTableContainer .tableTr .tableTh {
   font-weight: 600;
   padding: 15px 4px;
   text-align: left;
-  margin-right: 4px;
   font-size: 17px;
   line-height: 14px;
   text-transform: uppercase;
   color: #545f7d;
+  border: 1px solid purple;
 }
 
-.tableContainer .usetTableContainer .organisation,
-.tableContainer .usetTableContainer .username,
-.tableContainer .usetTableContainer .email,
-.tableContainer .usetTableContainer .phone,
-.tableContainer .usetTableContainer .date,
-.tableContainer .usetTableContainer .status {
-  padding: 14px 7px;
-  border-bottom: 1px solid #eeeded;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
-  text-align: left;
-  font-weight: 400;
-  font-size: 13.6px;
-  margin-left: 9px;
-  line-height: 16px;
-  color: #545f7d;
+.tableContainer .usetTableContainer .tabletray {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
 }
 /*# sourceMappingURL=Usertable.module.css.map */

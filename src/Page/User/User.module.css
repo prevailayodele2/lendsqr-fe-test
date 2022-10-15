@@ -1,18 +1,6 @@
 .userContainer {
   padding: 14px;
-  height: calc(100vh - 70px);
-  width: 80vw;
-}
-
-.userContainer .title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 28px;
-  color: #213f7d;
-}
-
-.userContainer .contain {
-  width: 100%;
+  height: calc(140vh - 70px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -20,6 +8,19 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+}
+
+.userContainer .title {
+  font-weight: 500;
+  padding: 16px 7px;
+  font-size: 24px;
+  line-height: 28px;
+  color: #213f7d;
+}
+
+.userContainer .contain {
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -29,17 +30,18 @@
 }
 
 .userContainer .contain .cardComponent {
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 20px;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  padding: 0px 20px;
 }
 
 .userContainer .contain .userListTable {
   margin-top: 20px;
   margin-bottom: 30px;
+  padding: 20px;
   position: relative;
   width: auto;
 }
