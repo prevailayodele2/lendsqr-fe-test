@@ -1,6 +1,5 @@
 import React from 'react'
 import classes from './Userpagecard.module.css'
-import { FiUsers } from 'react-icons/fi';
 
 const UserPageCard = ({ id, icon, color, title, value}) => {
   return (

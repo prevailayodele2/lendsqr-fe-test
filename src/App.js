@@ -7,7 +7,6 @@ import User from './Page/User/User';
 import GeneralInfo from './Page/UserDetailsPage/GeneralInfo/GeneralInfo';
 import UserDocument from './Page/UserDetailsPage/Document/UserDocument';
 import Login from './Page/Login/Login';
-import { useState } from 'react';
 
 function App() {
   const getEmail = localStorage.getItem('logindataEmail');

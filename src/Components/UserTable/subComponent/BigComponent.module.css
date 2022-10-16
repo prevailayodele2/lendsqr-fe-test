@@ -49,9 +49,7 @@
 
 .bigComponent .dropdownContainer .drop p {
   font-size: 18px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 10px;
   font-weight: 500;
   color: #545f7d;
   text-transform: capitalize;

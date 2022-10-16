@@ -45,6 +45,7 @@
 .navbarContainer .left .search input {
   border: none;
   width: 250px;
+  outline-width: 0;
   height: auto;
 }
 

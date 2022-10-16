@@ -5,6 +5,7 @@ import { useFormik } from 'formik';
 
 const Login = () => {
   const [loadingButton, setLoadingButton] = useState(false);
+  const [showPassword, setShowPassword] = useState(false);
 const [error, setError] = useState(false);
 
   const handleSubmit = (e) => {
@@ -71,14 +72,14 @@ const [error, setError] = useState(false);
               <div className={classes.inputs}>
                 <div className={classes.passwordInput}>
                   <input
-                    type="password"
+                      type={!showPassword ? 'password' : 'text'}
                     name='password'
                     placeholder="Password"
                     onChange={formik.handleChange}
                     onBlur={formik.handleBlur}
                     value={formik.values.password}
                   />
-                  <span>show</span>
+                  {!showPassword ? <span onClick={() => setShowPassword(true)}>show</span> : <span onClick={() => setShowPassword(false)}>hide</span>}
                 </div>
                {formik.touched.password && formik.errors.password ? <p>{formik.errors.password}</p>: ' ' }
               </div>

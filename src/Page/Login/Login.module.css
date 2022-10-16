@@ -136,6 +136,7 @@
   border-radius: 5px;
   width: 320px;
   font-size: 17px;
+  outline-width: 0;
   font-weight: 600;
   height: 44px;
 }
@@ -171,6 +172,7 @@
 
 .loginContainer .loginInputContainer .logininput form .inputs .passwordInput input {
   border: none;
+  outline-width: 0;
   font-size: 17px;
   font-weight: 600;
 }

@@ -6,6 +6,10 @@ const BigComponent = () => {
   const [showDropdown, setShowDropdown] = useState(false);
   const [selectedText, setSelectedText] = useState('');
   const options = ['Facebook', 'Twittetr', 'Instagram'];
+
+  const [showSecondDropdown, setShowSecondDropdown] = useState(false);
+  const [textSelected, setTextSelected] = useState('');
+  const item = ['inActive', 'Active', 'Blaclisted', 'Pending'];
   return (
     <>
       <div className={classes.bigComponent}>
@@ -56,12 +60,36 @@ const BigComponent = () => {
           <span>phone number</span>
           <input type="text" />
         </div>
-        <div className={classes.status}>
-          <select>
-            <option value="1">married</option>
-            <option value="2">single</option>
-            <option value="3">others</option>
-          </select>
+          <div className={classes.organisation}>
+            <span>Status</span>
+        <div className={classes.dropdownContainer}>
+          <div
+            onClick={() => setShowSecondDropdown((show) => !show)}
+            className={classes.drop}
+          >
+            <p>{textSelected ? textSelected : 'Select..'}</p>
+            <span>
+              <MdKeyboardArrowDown
+                style={{ fontSize: '25px', height: '100%' }}
+              />
+            </span>
+          </div>
+            {showSecondDropdown && (
+              <div className={classes.dropdownContent}>
+                {item.map((option) => (
+                  <span
+                    onClick={(e) => {
+                      setTextSelected(option);
+                      setShowSecondDropdown(false);
+                    }}
+                    className={classes.dropdownItem}
+                  >
+                    {option}
+                  </span>
+                ))}
+              </div>
+            )}
+          </div>
         </div>
         <div className={classes.buttons}>
           <button className={classes.reset}>reset</button>
