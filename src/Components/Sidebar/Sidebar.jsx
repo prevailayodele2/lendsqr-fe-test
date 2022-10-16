@@ -9,14 +9,14 @@ import { MdKeyboardArrowDown } from 'react-icons/md';
 const Sidebar = () => {
   return (
     <>
-     <div className={classes.sidebarContainer}>
-       <span className={classes.topItem}> <GiHandBag /> Switch Organisation <MdKeyboardArrowDown /> </span>
-       <span className={classes.topItem}><FaHome /> Dashboard</span>
+      <div className={classes.sidebarContainer}>
+       <span className={classes.topItem}> <GiHandBag /> <p>Switch Organisation</p> <MdKeyboardArrowDown /> </span>
+       <span className={classes.topItem}><FaHome /> <p>Dashboard</p> </span>
        <div className={classes.Section}>
         <span className={classes.title}>Customers</span>
         {SidebarItem.Customer.map((item)=> (
           <div key={item.id}  className={classes.customerItem}>
-          <NavLink to={item.link} activeClasName='active'> <span>{item.svg}</span>{item.name}</NavLink>
+          <NavLink to={item.link} activeClasName='active'> <span>{item.svg}</span><p>{item.name}</p></NavLink>
           </div>
         ))}
        </div>
@@ -24,7 +24,7 @@ const Sidebar = () => {
         <span className={classes.title}>Business</span>
         {SidebarItem.Business.map((item)=> (
           <div key={item.id} className={classes.customerItem}>
-          <NavLink activeClasName='active' to={item.link}> <span>{item.svg}</span>{item.name}</NavLink>
+          <NavLink activeClasName='active' to={item.link}> <span>{item.svg}</span><p>{item.name}</p></NavLink>
           </div>
         ))}
        </div>
@@ -32,7 +32,7 @@ const Sidebar = () => {
         <span className={classes.title}>Settings</span>
         {SidebarItem.Settings.map((item)=> (
           <div key={item.id} className={classes.customerItem}>
-          <Link to={item.link}> <span>{item.svg}</span>{item.name}</Link>
+          <Link to={item.link}> <span>{item.svg}</span><p>{item.name}</p></Link>
           </div>
         ))}
        </div>

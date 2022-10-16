@@ -57,10 +57,10 @@ const BigComponent = () => {
           <input type="text" />
         </div>
         <div className={classes.status}>
-          <select name="" id="">
-            <option value="">married</option>
-            <option value="">single</option>
-            <option value="">others</option>
+          <select>
+            <option value="1">married</option>
+            <option value="2">single</option>
+            <option value="3">others</option>
           </select>
         </div>
         <div className={classes.buttons}>

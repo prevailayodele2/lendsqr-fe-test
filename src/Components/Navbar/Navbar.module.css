@@ -39,19 +39,19 @@
   background: #FFFFFF;
   border-radius: 8px;
   border: 2px solid #213F7D;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
-.navbarContainer .left .search .navbarInput {
+.navbarContainer .left .search input {
   border: none;
-  width: 300px;
+  width: 250px;
   height: auto;
 }
 
 .navbarContainer .left .search .navbarSearchButton {
   border: none;
   background: #39CDCC;
-  padding: 6px 15px;
+  padding: 1.5px 15px;
   font-size: 20px;
   opacity: 10;
   border-radius: inherit;
@@ -100,8 +100,8 @@
 }
 
 .navbarContainer .right .navbarImage img {
-  width: 60px;
-  height: 48px;
+  width: 37px;
+  height: 37px;
   border-radius: 50%;
   -o-object-fit: cover;
      object-fit: cover;

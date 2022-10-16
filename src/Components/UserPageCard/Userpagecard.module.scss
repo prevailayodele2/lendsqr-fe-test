@@ -1,5 +1,5 @@
 .cardContainer {
-  width: 200px;
+  width: 240px;
   height: auto;
   background: #ffffff;
   border: 1px solid rgba(33, 63, 125, 0.06);
@@ -9,22 +9,34 @@
   padding:  22px 20px;
   display: flex;
   flex-direction: column;
-  .cardIcon{
+  &:hover{
+    box-shadow: 6px 10px 40px rgba(0, 0, 0, 0.21);
+
+  }
+  @media screen and (max-width: 1000px) {
+     width: 140px;
+   }
       svg{
           font-size: 46px;
           padding: 10px;
           border-radius: 50%;
-          background: #f091ff;
           opacity: 0.9;
-          color: purple;
+          @media screen and (max-width: 1000px) {
+            font-size: 30px;
+           }
       }
-  }
+      
+
   .cardTitle{
     font-weight: 500;
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase;
     color: #545F7D;
+    @media screen and (max-width: 1000px) {
+      font-size: 11px;
+      line-height: 12px;
+     }
   }
   .cardDetails{
     font-style: normal;
@@ -33,5 +45,8 @@
     line-height: 28px;
     text-transform: uppercase;
     color: #213F7D;
+    @media screen and (max-width: 1000px) {
+      font-size: 16px;
+     }
   }
 }

@@ -1,1 +1,207 @@
-/* No CSS *//*# sourceMappingURL=Login.module.css.map */
+.loginContainer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.loginContainer .loginbgImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginContainer .loginbgImage .loginLogo {
+  text-transform: capitalize;
+  color: #213f7d;
+  font-size: 30px;
+  font-weight: 600;
+  padding: 58px;
+  margin-left: 30px;
+}
+
+.loginContainer .loginbgImage img {
+  width: auto;
+  height: 75vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.loginContainer .loginInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 40px;
+  padding: 0px 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-direction: 1;
+      flex-direction: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  width: 100%;
+}
+
+.loginContainer .loginInputContainer .inputContainerHeader {
+  margin-left: 30px;
+}
+
+.loginContainer .loginInputContainer .inputContainerHeader h1 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 55px;
+  letter-spacing: -0.04em;
+  color: #213f7d;
+}
+
+.loginContainer .loginInputContainer .inputContainerHeader span {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #545f7d;
+}
+
+.loginContainer .loginInputContainer .logininput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #ffffff;
+  -webkit-box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+          box-shadow: 0px 15px 90px rgba(0, 0, 0, 0.03);
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginContainer .loginInputContainer .logininput form {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0px;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs p {
+  font-size: 20px;
+  color: #ff0000;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs label {
+  text-transform: capitalize;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs input {
+  background: #ffffff;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  border-radius: 5px;
+  width: 320px;
+  font-size: 17px;
+  font-weight: 600;
+  height: 44px;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs .passwordInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 2px solid rgba(84, 95, 125, 0.15);
+  width: 320px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 6px;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs .passwordInput span {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #39cdcc;
+}
+
+.loginContainer .loginInputContainer .logininput form .inputs .passwordInput input {
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
+}
+
+.loginContainer .loginInputContainer .logininput form .div span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  text-transform: uppercase;
+  color: #39cdcc;
+}
+
+.loginContainer .loginInputContainer .logininput form .div button {
+  background: #39cdcc;
+  border-radius: 8px;
+  margin-top: 15px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 10px 120px;
+  width: auto;
+}
+/*# sourceMappingURL=Login.module.css.map */

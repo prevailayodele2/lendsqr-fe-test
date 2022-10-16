@@ -1,5 +1,5 @@
 .userDetailContainer {
-  width: 100%;
+  width: 80vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -13,14 +13,21 @@
 }
 
 .userDetailContainer .goback {
+  padding: 15px 20px;
+  line-height: 19px;
+}
+
+.userDetailContainer .goback a {
   font-weight: 400;
   font-size: 26px;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  padding: 10px 20px;
-  line-height: 19px;
   color: #545f7d;
+}
+
+.userDetailContainer .goback a:hover {
+  text-decoration: underline;
 }
 
 .userDetailContainer .top {
@@ -70,6 +77,12 @@
   color: #ffffff;
 }
 
+@media screen and (max-width: 820px) {
+  .userDetailContainer .top .buttons .blacklist {
+    padding: 6px 10px;
+  }
+}
+
 .userDetailContainer .top .buttons .activate {
   border: 1px solid #39cdcc;
   text-transform: uppercase;
@@ -85,6 +98,18 @@
 .userDetailContainer .top .buttons .activate:hover {
   background-color: #39cdcc;
   color: #ffffff;
+}
+
+@media screen and (max-width: 820px) {
+  .userDetailContainer .top .buttons .activate {
+    padding: 6px 10px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .userDetailContainer .top .buttons {
+    gap: 10px;
+  }
 }
 
 .userDetailContainer .userOverview {
@@ -226,6 +251,13 @@
   padding-bottom: 11px;
 }
 
+@media screen and (max-width: 820px) {
+  .userDetailContainer .userOverview .footer {
+    font-size: 10px;
+    line-height: 10px;
+  }
+}
+
 .userDetailContainer .userOverview .footer .activeClassName {
   color: #39cdcc;
   padding-bottom: 10px;
@@ -235,5 +267,23 @@
 .userDetailContainer .userOverview .footer a:hover {
   color: #39cdcc;
   border-bottom: 2px solid #39CDCC;
+}
+
+@media screen and (max-width: 1200px) {
+  .userDetailContainer .userOverview {
+    width: 900px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .userDetailContainer .userOverview {
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .userDetailContainer .userOverview {
+    width: 580px;
+  }
 }
 /*# sourceMappingURL=Userdetails.module.css.map */

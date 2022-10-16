@@ -1,11 +1,17 @@
 import React, { useState } from 'react';
 import UsertableComponentSmall from '../subComponent/UsertableComponentSmall';
 import classes from './Usertray.module.css';
+//import { monthFormat } from '../../../utills';
 import { BiDotsVerticalRounded } from 'react-icons/bi';
 
-const UserTray = ({item, index, formatedDate}) => {
-    const [showSmallComponent, setShowSmallComponent] = useState(false);
-    console.log(item)
+const UserTray = ({ item, index, formatedDate }) => {
+  const [showSmallComponent, setShowSmallComponent] = useState(false);
+  const order = ['InActive', "Active", 'BlackListed', "Pending"]
+
+
+  const Button = ({ type }) => {
+    return <button className={type}>{type}</button>;
+  };
   return (
     <>
       <div className={classes.usertabletrayContainer}>
@@ -17,7 +23,9 @@ const UserTray = ({item, index, formatedDate}) => {
           <th className={classes.date}>
             {formatedDate(new Date(item?.lastActiveDate))}
           </th>
-          <th className={classes.status}>ooooo</th>
+          <th className={classes.status}>
+            <Button type={order[Math.floor((Math.random()*order.length))]} />
+          </th>
           <th className={classes.statuss}>
             <BiDotsVerticalRounded
               onClick={() => setShowSmallComponent((show) => !show)}

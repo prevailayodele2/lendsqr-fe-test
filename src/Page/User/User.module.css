@@ -1,6 +1,6 @@
 .userContainer {
   padding: 14px;
-  height: calc(140vh - 70px);
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,5 +44,12 @@
   padding: 20px;
   position: relative;
   width: auto;
+}
+
+@media screen and (max-width: 1200px) {
+  .userContainer .contain .userListTable {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
 }
 /*# sourceMappingURL=User.module.css.map */

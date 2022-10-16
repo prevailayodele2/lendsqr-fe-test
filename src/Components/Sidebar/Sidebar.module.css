@@ -1,3 +1,14 @@
+.toogle {
+  position: absolute;
+}
+
+.toogle svg {
+  font-size: 35px;
+  border-radius: 50%;
+  padding: 10px;
+  background-color: #e7e2e2;
+}
+
 .sidebarContainer {
   -webkit-box-flex: 0.9;
       -ms-flex: 0.9;
@@ -20,18 +31,46 @@
           flex-direction: column;
 }
 
+@media screen and (max-width: 820px) {
+  .sidebarContainer {
+    -webkit-box-flex: 0.6;
+        -ms-flex: 0.6;
+            flex: 0.6;
+  }
+}
+
 .sidebarContainer .topItem {
+  margin: 10px 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.sidebarContainer .topItem p {
   font-weight: 400;
   font-size: 16px;
   line-height: 10px;
-  margin: 10px 4px;
-  margin-left: 18px;
+  margin-left: 16px;
   color: #213f7d;
-  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebarContainer .topItem p {
+    display: none;
+  }
 }
 
 .sidebarContainer .topItem svg {
   margin-right: 5px;
+  margin-left: 10px;
+  color: #213f7d;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebarContainer .topItem svg {
+    font-size: 37px;
+  }
 }
 
 .sidebarContainer .Section {
@@ -53,8 +92,17 @@
   color: #545f7d;
 }
 
+@media screen and (max-width: 1000px) {
+  .sidebarContainer .Section .title {
+    margin-left: 10px;
+  }
+}
+
 .sidebarContainer .Section .customerItem {
   padding: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .sidebarContainer .Section .customerItem:hover {
@@ -63,11 +111,32 @@
 
 .sidebarContainer .Section .customerItem a {
   text-decoration: none;
-  font-style: normal;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   font-size: 17px;
-  line-height: 19px;
+  line-height: 15px;
   color: #213f7d;
+}
+
+.sidebarContainer .Section .customerItem a p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebarContainer .Section .customerItem a p {
+    display: none;
+  }
 }
 
 .sidebarContainer .Section .customerItem a a:active {
@@ -77,5 +146,11 @@
 .sidebarContainer .Section .customerItem a span {
   margin-left: 20px;
   margin-right: 15px;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebarContainer .Section .customerItem a span svg {
+    font-size: 40px;
+  }
 }
 /*# sourceMappingURL=Sidebar.module.css.map */

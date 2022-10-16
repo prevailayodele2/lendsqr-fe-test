@@ -1,5 +1,14 @@
 .InfoContainer {
   width: 1037px;
+  @media screen and (max-width: 1200px) {
+    width: 900px;
+  }
+  @media screen and (max-width: 1000px) {
+    width: 700px;
+  }
+  @media screen and (max-width: 820px) {
+    width: 600px;
+  }
   .personal {
     display: flex;
     flex-direction: column;

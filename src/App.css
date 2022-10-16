@@ -1,8 +1,9 @@
 .container {
   display: flex;
-  width: 100%;
+  position: relative;
+  height: auto;
 }
-.active{
+.active {
   border-left: 4px solid rgba(57, 205, 204, 1);
 }
 ::-webkit-scrollbar {
@@ -15,10 +16,65 @@
   overflow-y: scroll;
 }
 
-.drop {
- 
+.InActive {
+  font-weight: 400;
+  background-color: #aaaaaa;
+  font-size: 15px;
+  line-height: 16px;
+  text-align: center;
+  color: #424d69;
 }
-
+.Active {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 16px;
+  background-color: #9fc6ab;
+  text-align: center;
+  color: #39cd62;
+}
+.Pending {
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #e8d7a0;
+  line-height: 16px;
+  color: #e9b200;
+}
+.BlackListed {
+  font-weight: 400;
+  font-size: 15px;
+  background-color: #f2b8c7;
+  line-height: 16px;
+  text-align: center;
+  color: #e4033b;
+}
+.pink {
+  color: #DF18FF;
+}
+.pink svg{
+  background: #f091ff;
+  border: 0.2px solid #df18ff;
+}
+.purple{
+  color: #5718FF;
+}
+.purple svg{
+  background-color: #b8a3f2;
+  border: 0.2px solid #5718FF;
+}
+.yellow{
+  color: #F55F44;
+}
+.yellow svg{
+  background-color: #f1b1a5;
+  border: 0.2px solid #F55F44;
+}
+.red{
+  color: #FF3366;
+}
+.red svg{
+  background-color: #f6b3c3 ;
+border: 0.2px solid #FF3366;
+}
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px grey;
   border-radius: 10px;

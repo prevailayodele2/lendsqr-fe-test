@@ -24,16 +24,16 @@ $--cursor: pointer;
         background: #FFFFFF;
         border-radius: 8px;
         border: 2px solid #213F7D;
-        opacity: 0.5;
-        .navbarInput{
+        opacity: 0.8;
+        input{
           border: none;
-          width: 300px;
-          height: auto;
+          width: 250px;
+          height:auto;
         }
         .navbarSearchButton{
             border: none;
             background: #39CDCC;
-            padding: 6px 15px;
+            padding: 1.5px 15px;
             font-size: 20px;
             opacity: 10;
             border-radius: inherit;
@@ -67,8 +67,8 @@ $--cursor: pointer;
         cursor: $--cursor;
         margin: 15px;
       img{
-        width: 60px;
-        height: 48px;
+        width: 37px;
+        height: 37px;
         border-radius: 50%;
         object-fit: cover;
       }

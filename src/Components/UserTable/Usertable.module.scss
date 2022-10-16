@@ -1,3 +1,16 @@
+.loading{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50vh;
+  span{
+    font-size: 27px;
+    font-weight: 500;
+    font-style: italic;
+  }
+}
+
 .tableContainer {
   justify-content: space-around;
   flex-direction: column;
@@ -6,9 +19,14 @@
   box-shadow: 3px 5px 20px rgba(0, 0, 0, 0.04);
   border-radius: 4px;
   margin-bottom: 20px;
+  @media screen and (max-width: 1200px) {
+    width: 1000px !important;
+   }
+
   .usetTableContainer {
     display: flex;
     flex-direction: column;
+    padding: 16px;
     width: 100%;
     svg{
       font-size: 15px;
@@ -16,16 +34,19 @@
     }
     .tableTr {
       display: flex;
-      justify-content: space-evenly;
+      th{
+        flex: 1;
+        margin-right: 10px;
+      }
       .tableTh {
         font-weight: 600;
         padding: 15px 4px ;
         text-align: left;
         font-size: 17px;
         line-height: 14px;
+        flex: 1;
         text-transform: uppercase;
         color:#545f7d;
-        border: 1px solid purple;
       }
     }
     .tabletray{

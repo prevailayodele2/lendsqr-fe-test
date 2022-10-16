@@ -11,7 +11,7 @@ const UserDetails = ({ user }) => {
     <>
       <div className={classes.userDetailContainer}>
         <div className="">
-          <h2 className={classes.goback}>Go back</h2>
+          <h2 className={classes.goback}><Link to='/user'>Go back</Link> </h2>
           <div className={classes.top}>
             <span className={classes.title}>User Details</span>
             <div className={classes.buttons}>
