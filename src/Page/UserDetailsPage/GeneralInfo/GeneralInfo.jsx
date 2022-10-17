@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import classes from './GeneralInfo.module.css';
-import PersonalInfos from '../../../Components/SubComponent/PersonalInfos';
+import PersonalInfos from '../../../Components/personalInfo/PersonalInfos';
 import UserDetails from '../../../Components/UserDatails/UserDetails';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
