@@ -26,4 +26,4 @@ link to the deployed app-
 ##  https://prismatic-cat-090f7f.netlify.app/user
 
 
-developer note - the web app lack precision and few styling is messed up this is due to being new to sass.I have adapt really well but haven't had enough time to perfect it and i hope to be acknowledge for my effort.i really wish to hear back from you.
+developer note - the web app lack precision and few styling is messed up this is due to being new to sass.I have adapt really well but haven't had enough time to perfect the web app and i hope to be acknowledge for my effort.i really wish to hear back from you.
